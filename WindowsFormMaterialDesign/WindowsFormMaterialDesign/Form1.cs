@@ -1,5 +1,6 @@
 ﻿using CustomerFormMaterial.Dialog;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace WindowsFormMaterialDesign
@@ -24,14 +25,14 @@ namespace WindowsFormMaterialDesign
         {
             var dialog = new DialogOK("Title", "XXXAAA Content");
 
-            // Self Definition
-            //dialog.SetBackGroundColor(Color.AliceBlue)
-            //      .SetSelectImageIcon(2);
-            //dialog.SetButtonBackGroundColor(Color.Orange)
-            //     .SetButtonText("Modify");
+            //Self Definition
+            dialog.SetBackGroundColor(Color.AliceBlue)
+                  .SetSelectImageIcon(2);
+            dialog.SetButtonBackGroundColor(Color.Orange)
+                 .SetButtonText("Modify");
 
-            //Default Demo
-            dialog.SetWarningStyle();
+            //Default Style Demo
+            //dialog.SetWarningStyle();
 
             dialog.ShowDialog();
             dialog.Dispose();
